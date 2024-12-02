@@ -1,9 +1,14 @@
-pipeline {
+opipeline {
     agent any
     stages {
         stage('Build') {
             steps {
-                bat 'set'
+                echo 'test Build...'
+            }
+        }
+        stage('Build2') {
+            steps {
+                echo 'test Build2...'
             }
         }
     }
